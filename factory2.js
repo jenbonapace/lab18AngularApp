@@ -1,12 +1,12 @@
 var app = angular.module("myMod");
 
 app.factory('apiFactory', function($http){
-  var __name of object__ ={};
+  var apiKey ={};
 
   return{
     grabData: function(){
      $http({
-        url:"https://yoda.p.mashape.com/yoda",)}
+        url:"https://yoda.p.mashape.com/yoda"
         method:'GET'
         headers:{
           "X-Mashape-Key":"cO8KAT9sA1mshhfncngbC5GjFi5qp1cYs7jjsn8f7O1ti8UH6H",
