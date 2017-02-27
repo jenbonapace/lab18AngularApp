@@ -19,4 +19,8 @@ app.factory('apiFactory', function($http){
         console.log(error);
       });
 //here i have no clue what we are doing?
+//Will this one work?  AuthenticationService.getData()
+    // .then(function(result) {
+    //     $scope.apiKey = result;
+});
 });
