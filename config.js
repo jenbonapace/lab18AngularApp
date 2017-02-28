@@ -6,7 +6,7 @@ app.config(function($routeProvider, $locationProvider){
     controller: 'fizzBuzzController',
     templateUrl: 'fizzBuzz.html'
   })
-  .when('/yodaSpeak', {
+  .when('/quoteGenerator', {
     controller: 'apiController',
     templateUrl: 'api.html'
   })
