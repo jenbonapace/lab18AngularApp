@@ -12,3 +12,6 @@ border-style: double;
 border-color: blue;
 border-width: thick;
 }
+h1
+{color:red;
+border-style: groove;}
