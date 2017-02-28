@@ -6,6 +6,10 @@ app.config(function($routeProvider, $locationProvider){
     controller: 'fizzBuzzController',
     templateUrl: 'fizzBuzz.html'
   })
+  .when('/yodaSpeak', {
+    controller: 'apiController',
+    templateUrl: 'api.html'
+  })
   .otherwise({
     redirectTo:'/',
   });

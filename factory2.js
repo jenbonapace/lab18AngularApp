@@ -3,24 +3,24 @@ var app = angular.module("myMod");
 app.factory('apiFactory', function($http){
   var apiKey ={};
 
-  return{
+  return {
     grabData: function(){
-     $http({
-        url:"https://yoda.p.mashape.com/yoda"
-        method:'GET'
+     var promise = $http({
+        url:"https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies",
+        method:'GET',
         headers:{
-          "X-Mashape-Key":"cO8KAT9sA1mshhfncngbC5GjFi5qp1cYs7jjsn8f7O1ti8UH6H",
-           "Accept": "text/plain"
-         }
-       },
-      .then(function success(response){
+          "X-Mashape-Key":"zHqf4maixdmshYyJMQVV9RIB3hHsp1Ljh3XjsnZyi6bBzSefK3",
+          "Content-Type": "application/x-www-form-urlencoded",
+           "Accept": "application/json"
+          }
+       }).then(function success(response){
+         console.log(response);
+
         return response;
       },  function(error) {
         console.log(error);
       });
-//here i have no clue what we are doing?
-//Will this one work?  AuthenticationService.getData()
-    // .then(function(result) {
-    //     $scope.apiKey = result;
-});
+      return promise;
+    }
+  }
 });

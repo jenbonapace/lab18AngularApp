@@ -1,0 +1,9 @@
+<h1>Hello! Let's see a random quote!</h1>
+
+<form>
+  <button type="button" ng-click="randomQuote()">Generate quote</button>
+<div ng-repeat='object in quoteArray'>
+  <p>Your movie is {{object.author}}</p>
+  <p>Your quote is '{{object.quote}}'</p>
+</div>
+</form>
