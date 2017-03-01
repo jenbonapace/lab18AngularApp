@@ -4,11 +4,11 @@ app.config(function($routeProvider, $locationProvider){
   $routeProvider
   .when('/fizzBuzz', {
     controller: 'fizzBuzzController',
-    templateUrl: 'fizzBuzz.html'
+    templateUrl: 'htmlfiles/fizzBuzz.html'
   })
   .when('/quoteGenerator', {
     controller: 'apiController',
-    templateUrl: 'api.html'
+    templateUrl: 'htmlfiles/api.html'
   })
   .otherwise({
     redirectTo:'/',

@@ -3,7 +3,7 @@ app.directive("footDir", function(){
   return{
     restrict: "EA",
     replace:true,
-    templateUrl:"footer.html",
+    templateUrl:"htmlfiles/footer.html",
   };
 });
 
@@ -11,6 +11,6 @@ app.directive("headDir", function(){
   return{
     restrict: "EA",
     replace:true,
-    templateUrl:"header.html",
+    templateUrl:"htmlfiles/header.html",
   };
 });
